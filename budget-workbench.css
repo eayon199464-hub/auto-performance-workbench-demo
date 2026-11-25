@@ -1,0 +1,27 @@
+#bb-workbench {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+  margin-block: 18px;
+}
+#bb-workbench .panelhead { align-items: center; gap: 12px; flex-wrap: wrap; }
+#bb-workbench .panelhead h2 { margin: 0 0 4px; }
+#bb-workbench .bb-control { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #38534c; }
+#bb-workbench .bb-control select { max-width: 100%; }
+.bb-tablescroll { overflow-x: auto; margin-block: 14px 4px; }
+.bb-tablescroll table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.bb-tablescroll :is(td, th) { padding: 9px 12px; text-align: right; white-space: nowrap; }
+.bb-tablescroll :is(th:first-child, td:first-child) { text-align: left; }
+.bb-tablescroll tbody tr + tr { border-top: 1px solid #e3ebe6; }
+.bb-tablescroll thead { background: #f1f6f2; color: #446057; }
+.bb-tablescroll tbody th small { display: block; color: #557167; font-weight: 400; }
+.bb-notes { margin-top: 10px; color: #49645a; font-size: 14px; }
+.bb-notes summary { cursor: pointer; }
+.bb-controls { margin-block: 16px; }
+.bb-review-body .field:has(> #bc-report-month) { display: none; }
+.bb-review-body .grid { align-items: end; }
+#bb-workbench .bb-review-body .bg-body > section:last-child { margin-bottom: 0; }
+@media (max-width: 620px) {
+  #bb-workbench .bb-control { flex-wrap: wrap; }
+  .bb-review-body .bg-body > section { padding-inline: 10px; }
+}
